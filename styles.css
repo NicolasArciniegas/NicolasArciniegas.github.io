@@ -16,7 +16,6 @@
   font-size: 1.7rem;
   font-family: "Anton";
   padding: 7px 25px;
-
   color: white;
   display: flex;
   flex-direction: column;
@@ -97,6 +96,7 @@
   color: #f4511e;
   display: flex;
   flex-direction: column;
+  opacity: 0;
 }
 .descripcion {
   padding-top: 2rem;
@@ -104,6 +104,7 @@
 }
 .descripcion p {
   padding-top: 3px;
+  opacity: 0;
 }
 
 /* seccion quien-soy */
@@ -126,7 +127,57 @@
   background-color: black;
   height: 100vh;
 }
-
+.habilidades-titulo {
+  color: white;
+  padding-top: 90px;
+  padding-left: 40px;
+}
+.habilidades-titulo span {
+  font-size: 35px;
+  font-family: "Anton";
+}
+.habilidades-cuadro {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-left: 95vh;
+}
+.habilidades-cuadro a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+.barra-habilidades {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+}
+.barra-habilidades div {
+  background-color: rgb(33, 36, 40);
+  border-radius: 10px;
+  margin-right: 6rem;
+  width: 25rem;
+  height: 1.2rem;
+  align-items: center;
+  display: flex;
+}
+.barra-habilidades div span {
+  position: absolute;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  background-color: #f4511e;
+  border-radius: 10px;
+  margin-right: 5rem;
+  margin-left: 0.2rem;
+  height: 0.8rem;
+}
+/* seccion proyectos */
+.proyectos {
+  background-color: black;
+  height: 100vh;
+}
 /* seccion contactame */
 .contactame .titulo-contactame {
   text-align: center;
