@@ -66,14 +66,14 @@ window.onload = function() {
         hacerFadeIn(obj, 200), 5000
     )
     // Boton emepzar
+    let largoSeccion = document.getElementById("seccion-home").scrollHeight;
+    let largoNavbar = document.getElementById("navbar").scrollHeight;
     var botonEmpezar = document.getElementById("boton-empezar");
     botonEmpezar.onclick = function() {
         window.scrollTo({
-            top: 570,behavior: 'smooth'
+            top: largoSeccion-largoNavbar,behavior: 'smooth'
             })
 }   
-    let largoSeccion = document.getElementById("seccion-home").scrollHeight;
-    let largoNavbar = document.getElementById("navbar").scrollHeight;
     let elementos = {
         'menu-a-1': 0,
         'menu-a-2': largoSeccion - largoNavbar,
@@ -111,4 +111,18 @@ window.onload = function() {
     }, 500
     );
     
+    //Movimiento ojos
+    const balls = document.getElementsByClassName('ball');
+
+    document.onmousemove = (event) => {
+    const x = (event.clientX * 100) / window.innerWidth + '%';
+    const y = (event.clientY * 100) / window.innerHeight + '%';
+
+    for (let i = 0; i < balls.length; i++) {
+        balls[i].style.left = x;
+        balls[i].style.top = y;
+        balls[i].transform = 'translate(-' + x + ',-' + y + ')';
+    }
+    };
+
 }
