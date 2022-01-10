@@ -245,6 +245,7 @@
   height: 50vh;
   width: 80vh;
   background-color: rgb(54, 54, 58);
+  border-radius: 20px;
 }
 .card-body div {
   display: flex;
