@@ -71,15 +71,18 @@ window.onload = function() {
         window.scrollTo({
             top: 570,behavior: 'smooth'
             })
-}
+}   
+    let largoSeccion = document.getElementById("seccion-home").scrollHeight;
+    let largoNavbar = document.getElementById("navbar").scrollHeight;
     let elementos = {
         'menu-a-1': 0,
-        'menu-a-2': 570,
-        'menu-a-3': 1252,
-        'menu-a-4': 1934,
-        'menu-a-5': 2616,
+        'menu-a-2': largoSeccion - largoNavbar,
+        'menu-a-3': (largoSeccion*2) - largoNavbar,
+        'menu-a-4': (largoSeccion*3) - largoNavbar,
+        'menu-a-5': (largoSeccion*4) - largoNavbar,
 
     };
+    console.log(elementos)
     // Botones menu
     for (let a in elementos) {
         let btn = document.getElementById(a);
