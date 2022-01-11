@@ -39,6 +39,7 @@
 .menu-propio li a {
   color: #fff;
   text-decoration: none;
+  font-size: 1rem;
 }
 .menu-propio li a:hover {
   color: black;
@@ -76,10 +77,10 @@
   background-color: black;
   height: 100vh;
 }
-.horizontal {
-  max-width: 1300px;
-  margin: auto;
-  padding: 5rem 80px;
+#home-div-principal {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 3rem;
 }
 .home-div {
   margin: 0px auto 0px auto;
@@ -107,7 +108,20 @@
   padding-top: 3px;
   opacity: 0;
 }
-
+#cuerpo-home {
+  display: flex;
+  justify-content: space-between;
+}
+#fotos-home {
+  margin: 3rem 1rem;
+}
+#fotos-home img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 3rem 1rem;
+}
 /* seccion quien-soy */
 .quien-soy {
   background-color: white;
@@ -273,6 +287,9 @@
 .card-body a:visited {
   background-color: #f4511e;
   border-color: #f4511e;
+}
+#pacmen-card {
+  display: none;
 }
 /* ojos estilo */
 .eyes {

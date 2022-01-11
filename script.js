@@ -66,20 +66,31 @@ window.onload = function() {
         hacerFadeIn(obj, 200), 5000
     )
     // Boton emepzar
-    let largoSeccion = document.getElementById("seccion-home").scrollHeight;
+    console.log(
+        document.getElementById("navbar").scrollHeight,
+        document.getElementById("seccion-home").scrollHeight,
+        document.getElementById("seccion-quiensoy").scrollHeight,
+        document.getElementById("seccion-habilidades").scrollHeight,
+        document.getElementById("seccion-proyectos").scrollHeight,
+        document.getElementById("seccion-contactame").scrollHeight
+    )
     let largoNavbar = document.getElementById("navbar").scrollHeight;
+    let largoHome = document.getElementById("seccion-home").scrollHeight;
+    let largoQuien = document.getElementById("seccion-quiensoy").scrollHeight;
+    let largoHabilidades = document.getElementById("seccion-habilidades").scrollHeight;
+    let largoProyectos = document.getElementById("seccion-proyectos").scrollHeight;
     var botonEmpezar = document.getElementById("boton-empezar");
     botonEmpezar.onclick = function() {
         window.scrollTo({
-            top: largoSeccion-largoNavbar,behavior: 'smooth'
+            top: largoHome-largoNavbar,behavior: 'smooth'
             })
 }   
     let elementos = {
         'menu-a-1': 0,
-        'menu-a-2': largoSeccion - largoNavbar,
-        'menu-a-3': (largoSeccion*2) - largoNavbar,
-        'menu-a-4': (largoSeccion*3) - largoNavbar,
-        'menu-a-5': (largoSeccion*4) - largoNavbar,
+        'menu-a-2': largoHome - largoNavbar,
+        'menu-a-3': (largoHome + largoQuien) - largoNavbar,
+        'menu-a-4': (largoHome + largoQuien + largoHabilidades) - largoNavbar,
+        'menu-a-5': (largoHome + largoQuien + largoHabilidades + largoProyectos) - largoNavbar,
 
     };
     console.log(elementos)

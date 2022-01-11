@@ -37,36 +37,46 @@
         </nav>
         
         <section id="seccion-home" class="home">
-            <div class="horizontal">
-                <div class="home-div">
-                    <div class="nombre-home">
-                        <a>Mi nombre es </a>
-                        <span id="nombre-principal">Nicolas Arciniegas</span>
+            <div id="home-div-principal">
+                <div class="horizontal">
+                    <div class="home-div">
+                        <div class="nombre-home">
+                            <a>Mi nombre es </a>
+                            <span id="nombre-principal">Nicolas Arciniegas</span>
+                        </div>
+                        <div class='subtitulo-home'>
+                            <a>Soy estudiante de </a>
+                            <span>desarrollo web</span>
+                        </div>
                     </div>
-                    <div class='subtitulo-home'>
-                        <a>Soy estudiante de </a>
-                        <span>desarrollo web</span>
+                    <div id="cuerpo-home">
+                        <div class='descripcion'>
+                            <p class="fade-in-first">
+                                Siempre me he sentido atraido por el mundo de la tecnologia.
+                            </p>
+                            <p class="fade-in-first">
+                                Es por eso que decidi adentrarme en el mundo de la programacion web, que es un
+                            </p>
+                            <p class="fade-in-first">
+                                campo muy relevante y amplio en la industria de la informatica.
+                            </p>
+                            <p class="fade-in-first">
+                                Este proyecto mostrara mis habilidades y conocimientos basicos en las tecnologias
+                            </p>
+                            <p class="fade-in-first">
+                                que estoy aprendiendo: HTML, CSS y Javascript.
+                            </p>
+                            <p class="fade-in-first">
+                                Aqui tambien encontraras la mejor forma de contactarme, mi perfil de GitHub y LinkedIn.
+                            </p>
+                        </div>
                     </div>
+                    <button id="boton-empezar" type="button" class="btn btn-danger" style="background-color: coral;">Empezemos</button>
                 </div>
-            <div class='descripcion'>
-                <p class="fade-in-first">
-                    Siempre me he sentido atraido por el mundo de la tecnologia.
-                </p>
-                <p class="fade-in-first">
-                    Es por eso que decidi adentrarme en el mundo de la programacion web, que es un
-                </p>
-                <p class="fade-in-first">
-                    campo muy relevante y amplio en la industria de la informatica.
-                </p>
-                <p class="fade-in-first">
-                    Este proyecto mostrara mis habilidades y conocimientos basicos en las tecnologias
-                </p>
-                <p class="fade-in-first">
-                    que estoy aprendiendo: HTML, CSS y Javascript.
-                </p>
+                <div id="fotos-home">
+                    <img src="assets/foto1.jpeg">
+                </div>
             </div>
-            <button id="boton-empezar" type="button" class="btn btn-danger" style="background-color: coral;">Empezemos</button>
-</div>
         </section>
         
         <section id="seccion-quiensoy" class="quien-soy">
@@ -121,13 +131,13 @@
             </div>
         </section>
 
-        <section class="proyectos">
+        <section id="seccion-proyectos" class="proyectos">
             <div class="proyectos-titulos">
                 <span>Proyectos</span>
                 <p>Algunos de mis proyectos cargados en GitHub</p>
             </div>
             <div class="contenido-proyectos">
-                <div class="card">
+                <div class="card" id='eyes-card'>
                     <div class="eyes">
                         <div class="eye">
                             <div class="ball"></div>
@@ -142,6 +152,24 @@
                         <div>
                             <a href="#" >Ver otro</a>
                             <a href="https://github.com/NicolasArciniegas/eyes" >Ir a GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id='pacmen-card'>
+                    <div class="eyes">
+                        <div class="eye">
+                            <div class="ball"></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Eye-Movement example</h4>
+                        <p class="card-text">
+                            Esta es una animacion que imita el movimiento de un ojo usando
+                            Html, Css y Javascript.
+                        </p>
+                        <div>
+                            <a href="#">Ver otro</a>
+                            <a href="https://github.com/NicolasArciniegas/eyes">Ir a GitHub</a>
                         </div>
                     </div>
                 </div>
