@@ -136,4 +136,37 @@ window.onload = function() {
     }
     };
 
+    // Mostrar otros proyectos
+    // Botones
+    let btnEyes = document.getElementById("eyes-boton");
+    let btnPacmen = document.getElementById("pacmen-boton");
+    let btnBstracker = document.getElementById("bustracker-boton");
+    // Cards
+    let eyesCard = document.getElementById("eyes-card");
+    let pacmenCard = document.getElementById("pacmen-card");
+    let bustrackerCard = document.getElementById("bustracker-card");
+
+    btnEyes.onclick = function() {
+        eyesCard.style.display = 'none';
+        bustrackerCard.style.display = 'block';
+    }
+    btnPacmen.onclick = function() {
+        pacmenCard.style.display = 'none';
+        eyesCard.style.display = "block";
+    }
+    btnBstracker.onclick = function() {
+        bustrackerCard.style.display = 'none';
+        pacmenCard.style.display = "block";
+    }
+    // Botones github
+    let btnGithubEyes = document.getElementById("giteyes");
+    let btnGitbus = document.getElementById("gitbus");
+    let btnGitPac = document.getElementById("gitpack");
+
+    btnGithubEyes.onclick = () => {
+        window.open("https://github.com/NicolasArciniegas/eyes");
+    }
+    btnGitbus.onclick = () => {
+        window.open("https://github.com/NicolasArciniegas/busTracker");
+    }
 }

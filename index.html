@@ -137,7 +137,7 @@
                 <p>Algunos de mis proyectos cargados en GitHub</p>
             </div>
             <div class="contenido-proyectos">
-                <div class="card" id='eyes-card'>
+                <div id='eyes-card' class="card" >
                     <div class="eyes">
                         <div class="eye">
                             <div class="ball"></div>
@@ -149,27 +149,44 @@
                             Esta es una animacion que imita el movimiento de un ojo usando
                             Html, Css y Javascript.
                         </p>
-                        <div>
-                            <a href="#" >Ver otro</a>
-                            <a href="https://github.com/NicolasArciniegas/eyes" >Ir a GitHub</a>
+                        <div id='botonera' style="display: flex;">
+                            <button href="#" id='eyes-boton' >Ver otro</button>
+                            <button id="giteyes" ref="https://github.com/NicolasArciniegas/eyes" >Ir a GitHub</button>
                         </div>
                     </div>
                 </div>
-                <div class="card" id='pacmen-card'>
-                    <div class="eyes">
-                        <div class="eye">
-                            <div class="ball"></div>
+                <div id='bustracker-card' class="card">
+                    <div class='eyes'>
+                        <div class="map">
+                            <img src="assets/map.png">
                         </div>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">Eye-Movement example</h4>
+                        <h4 class="card-title">Real Time BusTracker</h4>
                         <p class="card-text">
-                            Esta es una animacion que imita el movimiento de un ojo usando
-                            Html, Css y Javascript.
+                            Este repositorio muestra en tiempo real la ubicacion
+                            de buses de transporte publico de la ciudad de Boston.
                         </p>
-                        <div>
-                            <a href="#">Ver otro</a>
-                            <a href="https://github.com/NicolasArciniegas/eyes">Ir a GitHub</a>
+                        <div  style="display: flex;">
+                            <button href="#" id='bustracker-boton'>Ver otro</button>
+                            <button id="gitbus" href="https://github.com/NicolasArciniegas/eyes">Ir a GitHub</button>
+                        </div>
+                    </div>
+                </div>
+                <div id='pacmen-card' class="card">
+                    <div class='eyes'>
+                        <div class="map">
+                            <img src="assets/pacman.png">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">PacMen excersice</h4>
+                        <p class="card-text">
+                            Este repositorio muestra una aminacion de pacMen.
+                        </p>
+                        <div style="display: flex;">
+                            <button id ='pacmen-boton' href="#" id='eyes-boton'>Ver otro</button>
+                            <button id="gitpac" href="https://github.com/NicolasArciniegas/eyes">Ir a GitHub</button>
                         </div>
                     </div>
                 </div>
