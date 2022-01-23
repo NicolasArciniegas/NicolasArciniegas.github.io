@@ -108,7 +108,7 @@ window.onload = function() {
         'python': 20,
         'html': 17.5,
         'css': 12.5,
-        'js': 13,
+        'js': 5,
     };
     var tempoCargaBarra = setInterval(
         function() {
@@ -161,12 +161,15 @@ window.onload = function() {
     // Botones github
     let btnGithubEyes = document.getElementById("giteyes");
     let btnGitbus = document.getElementById("gitbus");
-    let btnGitPac = document.getElementById("gitpack");
+    let btnGitPac = document.getElementById("gitpac");
 
     btnGithubEyes.onclick = () => {
         window.open("https://github.com/NicolasArciniegas/eyes");
     }
     btnGitbus.onclick = () => {
         window.open("https://github.com/NicolasArciniegas/busTracker");
+    }
+    btnGitPac.onclick = () => {
+        window.open("https://github.com/NicolasArciniegas/PacMenExercise");
     }
 }
